@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+</html>
+  <head>
+    <met charset = "utf-8">
+    <script src = "app.js" charset="utf-8"></script>
+    <link rel = "stylesheet" href = "style.css"></link>
+    <title>Basic Tetris</title>
+  </head>
+  <body>
+
+  <div class = "scores">
+    <h1>Score: <span id = "score">0<span></h1>
+  </div>
+
+
+<div class = "container">
+
+  <div class = "controls">
+    <h1>Controls</h1>
+    <div id = "lrd">
+      <img src = "left.png" alt = "left arrow key">
+      <img src = "down.png" alt = "down arrow key">
+      <img src = "right.png" alt = "right arrow key">
+      <p>Press the left arrow key to move left</p>
+      <p><b><u>Hold</u></b> the down arrow key to jump down</p>
+      <p>Press the right arrow key to move right</p>
+    </div>
+
+    <div id = "ad">
+      <img src = "a.png" alt = "a key">
+      <img src = "d.png" alt = "d key">
+      <p>Press the A key to rotate left</p>
+      <p>Press the D key to rotate right</p>
+    </div>
+      <br><p>The difficulty bar is at the top</p>
+  </div>
+
+  <div class = "game">
+  <div class = "speed-bar">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+    <div class = "grid">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+
+    <div class = "taken invis"></div>
+    <div class = "taken invis"></div>
+    <div class = "taken invis"></div>
+    <div class = "taken invis"></div>
+    <div class = "taken invis"></div>
+    <div class = "taken invis"></div>
+    <div class = "taken invis"></div>
+    <div class = "taken invis"></div>
+    <div class = "taken invis"></div>
+    <div class = "taken invis"></div>
+
+
+
+</div>
+<div class = "sidebar">
+<div class = "mini-grid">
+
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+</div>
+
+  <div class = "plus-score">
+    <h1 id = "header"></h1>
+  </div>
+</div>
+</div>
+</div>
+
+  <div class = "buttons">
+    <!--<button id = "start-button">Start/Pause</button>-->
+    <img id = "start-button" src = "play.png" alt = "play">
+    <img id = "vol-down" src = "minus.png" alt = "volume down">
+    <img id = "mute" src = "unmute.png" alt = "unmuted">
+    <img id = "vol-up" src = "add.png" alt = "volume up">
+
+  </div>
+
+  </body>
+</html>

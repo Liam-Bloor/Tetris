@@ -1,0 +1,139 @@
+/* Tetris grid */
+body{
+  font-family: "Press start 2P";
+  background-color: #aaffe7;
+
+}
+.grid{
+  margin-left: 15%;
+  width: 320px;
+  height: 640px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2ae9d;
+}
+.grid div{
+  height: 30px;
+  width: 30px;
+  border: 1px solid #aaffe7;
+}
+.tetromino{
+
+}
+
+/* Next tetromino grid */
+
+.mini-grid{
+  margin-left: 50px;
+  width: 128px;
+  height: 128px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f2ae9d;
+}
+.mini-grid div{
+  height: 30px;
+  width: 30px;
+  border: 1px solid #aaffe7;
+}
+
+/* Container for all grids, controls and difficulty bar */
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.scores{
+  margin-left: 45%;
+  margin-bottom: 1%;
+}
+.buttons{
+  margin-left: 45%;
+  margin-top: 1%;
+}
+
+/* Makes the row below the grid invisible */
+.invis{
+  border-style: none !important;
+}
+.plus-score{
+  width: 88px;
+  height: 88px;
+  color: #aaffe7;
+  margin-left: 50px;
+  margin-top: 20px;
+
+}
+
+/* Contains mini grid and plus-score */
+.sidebar{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fade text in and out when score is added */
+.show-score{
+  text-align: center;
+  transition: color 2s ease-out;
+  color: black;
+  font-size: 50px;
+}
+.hide-score{
+  text-align: center;
+  transition: color 2s ease-in;
+  color: #aaffe7;
+  font-size: 50px;
+}
+
+/* Difficulty/Speed bar */
+.speed-bar{
+  background-color: #f2ae9d;
+  width: 500px;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15%;
+  margin-bottom: 1%;
+  padding: 5px;
+}
+.speed-bar div{
+  height: 0px;
+  width: 0px;
+  margin-right: 5px;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 45px solid #f2ae9d;
+}
+.orange-arrow{
+  border-left: 35px solid #aaffe7;
+}
+
+/* Sizes for controls and score */
+h1{
+  font-size: 40px;
+}
+.controls img{
+  width: auto;
+  height: 100px;
+  padding: 4%;
+}
+p{
+  font-size: 15px;
+}
+.controls{
+  display:flex;
+  flex-direction: column;
+  margin-left: 5%;
+  padding: 10px;
+  background-color: #f2ae9d;
+  border-radius: 20px;
+}
+
+.game{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttons img{
+  width: auto;
+  height: 63px;
+}
