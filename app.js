@@ -40,7 +40,7 @@
 
   /*-------------------------------------Initialise Audio---------------------------------------------*/
   var backgroundSound = document.createElement("audio")//set up for background music
-  backgroundSound.src = "sound.mp3"
+  backgroundSound.src = "sound.mp3" //Source : Youtube Audio library : Powerup! Jeremy Blake
   backgroundSound.volume = vol
   backgroundSound.loop = true
 
@@ -722,7 +722,7 @@
   /*---------------------Play a short +score sound when score is added----------------------------------*/
   function scoreSound(){
     var audio = document.createElement("audio")
-    audio.src = "line-remove.mp3"
+    audio.src = "line-remove.mp3" //Source : Youtube Audio library : Crash
     audio.addEventListener("ended", function () {
         document.removeChild(this)
     }, false)
@@ -733,18 +733,18 @@
   /*--------------------Play a short "getting faster" sound when speed is added-------------------------*/
   function fasterSound(){
     var audio = document.createElement("audio")
-    audio.src = "faster.wav"
+    audio.src = "faster.mp3" //Source : Youtube Audio library : Slide whistle
     audio.addEventListener("ended", function () {
         document.removeChild(this)
     }, false)
-    audio.volume = vol
+    audio.volume = 1
     audio.play()
   }
 
   /*---------------------Play a short gameover sound when player loses----------------------------------*/
   function gameOverSound(){
     var audio = document.createElement("audio")
-    audio.src = "gameover.mp3"
+    audio.src = "gameover.mp3" //Source : Youtube Audio library : Slide Whistle to Drum
     audio.addEventListener("ended", function () {
         document.removeChild(this)
     }, false)
